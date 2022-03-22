@@ -15,6 +15,9 @@ Esse projeto foi construído com base em HTML e CSS puro, e um pouco de Glassmor
 * LightHouse
 ![image](https://user-images.githubusercontent.com/61604214/159401478-813e9f5f-f05a-47f1-affd-8d7dddaa682c.png)
 
+* Google's Mobile-friendly Test
+![image](https://user-images.githubusercontent.com/61604214/159402006-2d8cf86b-5316-4ab9-8fce-5192f20d91d0.png)
+
 
 ## 📄 Licença
 
