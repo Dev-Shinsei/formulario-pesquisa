@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Carlos Gomes"> 
+<meta name="description" content="Pequena pesquisa sobre desenvolvedores">
+<meta name="robots" content="index, follow"> 
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="/assets/survey-favicon.png" type="image/x-icon">
+
+
+<title>Formulário de Pesquisa | Dev</title>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulário de Pesquisa</h1>
+          <p id="description" class="description text-center">
+            Obrigado por tirar um tempo para responder a nossa pesquisa ❤️
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nome</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Insira seu Nome..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">E-Mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Insira seu Email..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Idade<span class="clue">(opcional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Informe sua Idade aqui"
+            />
+          </div>
+          <div class="form-group">
+            <p>Qual opção melhor descreve sua área atual ?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecione sua área atual</option>
+              <option value="student">Estudante</option>
+              <option value="job">Emprego Integral</option>
+              <option value="learner">Trainee</option>
+              <option value="preferNo">Prefiro não informar</option>
+              <option value="other">Outros</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Qaul stack você recomendaria para um amigo aprender ?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Front"
+                type="radio"
+                class="input-radio"
+                checked
+              />Front-end</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Back"
+                type="radio"
+                class="input-radio"
+              />Back-end</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="FullStack"
+                type="radio"
+                class="input-radio"
+              />FullStack</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              O que você recomendaria a um amigo construir como portfólio ?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Selecione uma opção</option>
+              <option value="challenges">Desafios</option>
+              <option value="personalPro">Projetos Pessoais</option>
+              <option value="clones">Clones</option>
+              <option value="frameworks">Frameworks</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projetos Front-end</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projetos Back-end</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Visualização de Dados</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Desafios</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Comunidade Open Source</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="behind-the-codes"
+                type="checkbox"
+                class="input-checkbox"
+              />Por trás do Código</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="online-meetings"
+                type="checkbox"
+                class="input-checkbox"
+              />Reuniões Online</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forum</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="jobOp"
+                type="checkbox"
+                class="input-checkbox"
+              />Oportunidades de Emprego Aplicadas</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Algum comentário ou sugestão ?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Insira seu comentário aqui..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+<footer>
+    <p>Copyright © 2020 | Carlos "devShinsei" Gomes.</p>
+    <p>Criado por <a href="http://github.com/Dev-Shinsei" target="_blank">devShinsei</a></p>
+</footer>
+</html>
