@@ -10,6 +10,12 @@ Esse projeto Foi desenvolvido com o intuito de consolidar minhas habilidades em 
 Esse projeto foi construído com base em HTML e CSS puro, e um pouco de Glassmorphism CSS para o box de form.
 
 
+## Testadores
+
+* LightHouse
+![image](https://user-images.githubusercontent.com/61604214/159401478-813e9f5f-f05a-47f1-affd-8d7dddaa682c.png)
+
+
 ## 📄 Licença
 
 MIT License
